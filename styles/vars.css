@@ -1,0 +1,27 @@
+:root {
+  --base-size: 1em;
+  --body-font: Quattrocento Sans;
+  --body-size: 1rem;
+  --body-weight: 400;
+  --header-font: Ovo;
+  --header-size: 3rem;
+  --small-size: 0.875rem;
+  --fuschia-1: #EF5DA8;
+  --fuschia-2: #F178B6;
+  --fuschia-3: #FBDDEC;
+  --iris-1: #5D5FEF;
+  --iris-2: #7879F1;
+  --iris-3: #A5A6F6;
+  --turquoise-1: #57ECE3;
+  --turquoise-2: #89F2EB;
+  --turquoise-3: #BCF7F4;
+  --grey-1: #030303;
+  --grey-2: #212121;
+  --grey-3: #464646;
+  --grey-4: #656565;
+  --grey-5: #8B8B8B;
+  --grey-6: #A1A1A1;
+  --grey-7: #C9C9C9;
+  --grey-8: #DADADA;
+  --grey-9: #F7F7F7;
+}

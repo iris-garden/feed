@@ -3,11 +3,13 @@ a {
 }
 a:hover {
   text-decoration: underline;
+  text-decoration-color: var(--turquoise-1);
 }
 html {
-  font-size: 1em;
-  font-family: Quattrocento Sans;
-  font-weight: 400;
+  background-color: var(--grey-9);
+  font-size: var(--base-size);
+  font-family: var(--body-font);
+  font-weight: var(--body-weight);
 }
 .feed {
   display: flex;
@@ -17,8 +19,8 @@ html {
 .feed-header {
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
-  font-size: 3rem;
-  font-family: Ovo;
+  font-size: var(--header-size);
+  font-family: var(--header-font);
 }
 .feed-body {
   display: flex;
@@ -32,7 +34,7 @@ html {
   border-style: solid;
   border-width: 1px;
   border-radius: 0.5rem;
-  border-color: #eeeeee;
+  border-color: var(--grey-8);
   padding: 0.75rem;
   width: inherit;
 }
@@ -55,13 +57,13 @@ html {
 .feed-body-post-header-right-user-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
-  font-family: Ovo;
+  font-family: var(--header-font);
 }
 .feed-body-post-header-right-user-name-profile-link {
   color: inherit;
 }
 .feed-body-post-header-right-timestamp {
-  color: #c6c6c6;
+  color: var(--grey-5);
   margin: 0;
   font-weight: 300;
 }
