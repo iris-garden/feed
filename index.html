@@ -7,25 +7,28 @@
     <link href="styles/index.css" rel="stylesheet" />
   </head>
   <body class="feed">
-    <h1 class="feed-header">Feed</h1>
-    <div class="feed-body">
+    <template id="feed-body-post-list">
       <div class="card feed-body-post">
         <div class="feed-body-post-header">
-          <a class="feed-body-post-header-user-pic-profile-link" href="users/sashi-summerfield.html">
-            <img class="feed-body-post-header-user-pic-image" src="images/sashi-summerfield-profile-picture.jpg" />
+          <a class="feed-body-post-header-user-pic-profile-link">
+            <img class="feed-body-post-header-user-pic-image" />
           </a>
           <div class="feed-body-post-header-right">
             <h3 class="feed-body-post-header-right-user-name">
-              <a class="feed-body-post-header-right-user-name-profile-link" href="users/sashi-summerfield.html">Sashi Summerfield</a>
+              <a class="feed-body-post-header-right-user-name-profile-link">Sashi Summerfield</a>
             </h3>
-            <h4 class="feed-body-post-header-right-timestamp">Yesterday, 1:12 pm</h4>
+            <h4 class="feed-body-post-header-right-timestamp"></h4>
           </div>
         </div>
-        <img class="feed-body-post-image" src="images/blake-costa-valentines-picture.jpg" />
-        <div class="feed-body-post-text">Happy Valentine to my cutie patootie <a class="feed-body-post-text-profile-link" href="users/blake-costa.html">@Blake Costa</a> ! 50 years and counting !!!</div>
+        <img class="feed-body-post-image" />
+        <div class="feed-body-post-text"></div>
       </div>
+    </template>
+    <h1 class="feed-header">Feed</h1>
+    <div class="feed-body">
+      <script src="scripts/index.js"></script>
+      <feed-body-post-list data="posts">
+      </feed-body-post-list>
     </div>
-    <script src="scripts/index.js">
-    </script>
   </body>
 </html>
