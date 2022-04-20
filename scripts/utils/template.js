@@ -4,23 +4,36 @@ export const inflate = (
   fields,
   data
 ) => {
-  data.forEach((item) => {
-    const component = document.getElementById(id).content.cloneNode(true)
-    fields.forEach((field) => {
-      const { cls, expr, attr } = field
-      const element = component.querySelector(`.${cls}`)
-      const val = expr(item)
-      if (attr !== undefined) {
-        element.setAttribute(attr, val)
-      } else {
-        element.innerHTML = val
-      }
-    })
-    parentElement.appendChild(component)
-  })
+  data.forEach(
+    (item) => {
+      const component =
+        document.getElementById(id).content.cloneNode(true)
+      fields.forEach(
+        (field) => {
+          const { clss, expr, attr } = field
+          clss.forEach(
+            (cls) => {
+              const element = component.querySelector(`.${cls}`)
+              const val = expr(item)
+              if (attr !== undefined) {
+                element.setAttribute(attr, val)
+              } else {
+                element.innerHTML = val
+              }
+            }
+          )
+        }
+      )
+      parentElement.appendChild(component)
+    }
+  )
 }
 
-export const Template = (id, fields, data) => class extends HTMLElement {
+export const Template = (
+  id,
+  fields,
+  data
+) => class extends HTMLElement {
   connectedCallback() {
     inflate(this, id, fields, data)
   }
