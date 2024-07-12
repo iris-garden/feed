@@ -1,3 +1,5 @@
+import { display } from "./utils/template.js"
+
 export const usernameToName = (username) =>
   username
     .split("-")
@@ -68,4 +70,8 @@ export const feedBodyPostList = {
       }
     }
   ]
+}
+
+export const feedBodyLink = {
+  id: "feed-body-link",
 }

@@ -39,9 +39,9 @@ export const Template = (
   }
 }
 
-export const display = (pages) => {
-  pages.forEach(
-    (page) => page.forEach(
+export const display = (components) => {
+  components.forEach(
+    (component) => component.forEach(
       ([{ id, fields }, data]) =>
         customElements.define(id, Template(id, fields, data))
     )
