@@ -1,0 +1,46 @@
+.dms {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#conversation {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.prompt {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.prompt-text, .response-text, .old-response-text {
+  padding: 1em;
+  width: auto;
+  max-width: 45%;
+  border-width: 1px;
+  border-color: #222324;
+  border-style: solid;
+  border-radius: 5px;
+}
+.prompt-text {
+  background-color: #e2e3e4;
+}
+.responses {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.response, .old-response {
+  display: flex;
+  justify-content: flex-end;
+}
+.response-text, .old-response-text {
+  background-color: #e2eff4;
+}
+.response-text:hover {
+  background-color: #f2e3f4;
+}
+.response-text {
+  cursor: pointer;
+}
